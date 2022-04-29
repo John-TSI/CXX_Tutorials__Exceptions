@@ -1,5 +1,5 @@
 #include<iostream>
-//#include<typeinfo>
+#include<typeinfo>
 #include"../inc/exception.hpp"
 
 
@@ -12,8 +12,8 @@ int main()
 	}
 	catch(const std::exception& ex)
 	{
-		std::cout << ex.what() << std::endl;
-		//std::cout << typename(ex).name() << std::endl;
+		std::cout  << ex.what() << std::endl;
+		std::cout << typeid(ex).name() << std::endl;
 	}
 
 	return 0;
